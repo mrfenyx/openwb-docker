@@ -14,10 +14,10 @@ services:
       - NET_ADMIN
     environment:
       TZ: "Europe/Berlin"
-      WEB_PORT: 8888
+      WEB_PORT: 9047
     tmpfs:
       - /var/www/html/openWB/ramdisk
     volumes:
-      - ./config:/var/www/html/openWB/config
-      - ./logdata:/var/www/html/openWB/web/logging/data
+      - /volume1/docker/openWB/config:/var/www/html/openWB/config
+      - /volume1/docker/openWB/logdata:/var/www/html/openWB/web/logging/data
 
